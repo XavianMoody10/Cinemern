@@ -148,6 +148,11 @@ const config = {
   // testEnvironment: "jsdom",
   testEnvironment: "jest-fixed-jsdom",
 
+  moduleNameMapper: {
+    "\\.(jpg|jpeg|png|gif|svg)$": "<rootDir>/fileMock.cjs",
+    "^swiper/css$": "<rootDir>/styleMock.cjs",
+  },
+
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
 
